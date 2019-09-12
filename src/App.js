@@ -433,21 +433,6 @@ const MainHeadlines = () => (
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ut sem
         viverra aliquet eget.
       </TopHeadLineRight>
-      {/* <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Enim ut sem viverra
-        aliquet eget. Sed risus ultricies tristique nulla aliquet enim. Eu
-        scelerisque felis imperdiet proin. Dolor sit amet consectetur adipiscing
-        elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ut sem
-        viverra aliquet eget. Sed risus ultricies tristique nulla aliquet enim.
-        Eu scelerisque felis imperdiet proin. Dolor sit amet consectetur
-        adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Enim ut sem viverra aliquet eget. Sed risus ultricies tristique nulla
-        aliquet enim. Eu scelerisque felis imperdiet proin. Dolor sit amet
-        consectetur adipiscing elit.
-      </p> */}
     </MainHeadlinesOneTopBanner>
     <MainHeadlinesOneBottomBanner>
       <NewsItemContainer />
@@ -467,41 +452,27 @@ const SideBarStyle = styled.div`
   border: 0.5px solid black;
 `;
 
-const SideBarNewsItem = styled.div`
+const SideBarNewsItemStyle = styled.div`
   padding-left: 24px;
   border: 0.5px solid black;
 `;
 
+const SideBarNewsItem = () => (
+  <SideBarNewsItemStyle>
+    <h5>Side News Item</h5>
+    <p>Lorem ipsum dolor sit amet</p>
+  </SideBarNewsItemStyle>
+);
+
 const SideBar = () => (
   <SideBarStyle>
-    <SideBarNewsItem>
-      <h5>Side News Item 1</h5>
-      <p>Lorem ipsum dolor sit amet</p>
-    </SideBarNewsItem>
-    <SideBarNewsItem>
-      <h5>Side News Item 2</h5>
-      <p>Lorem ipsum dolor sit amet</p>
-    </SideBarNewsItem>
-    <SideBarNewsItem>
-      <h5>Side News Item 3</h5>
-      <p>Lorem ipsum dolor sit amet</p>
-    </SideBarNewsItem>
-    <SideBarNewsItem>
-      <h5>Side News Item 4</h5>
-      <p>Lorem ipsum dolor sit amet</p>
-    </SideBarNewsItem>
-    <SideBarNewsItem>
-      <h5>Side News Item 5</h5>
-      <p>Lorem ipsum dolor sit amet</p>
-    </SideBarNewsItem>
-    <SideBarNewsItem>
-      <h5>Side News Item 6</h5>
-      <p>Lorem ipsum dolor sit amet</p>
-    </SideBarNewsItem>
-    <SideBarNewsItem>
-      <h5>Side News Item 7</h5>
-      <p>Lorem ipsum dolor sit amet</p>
-    </SideBarNewsItem>
+    <SideBarNewsItem />
+    <SideBarNewsItem />
+    <SideBarNewsItem />
+    <SideBarNewsItem />
+    <SideBarNewsItem />
+    <SideBarNewsItem />
+    <SideBarNewsItem />
   </SideBarStyle>
 );
 
