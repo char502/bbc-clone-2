@@ -53,8 +53,10 @@ const NewsLink = styled.div`
   &:last-child {
     border-width: 0;
   }
+  border-bottom: 4px solid transparent;
   :hover {
-    border-bottom: solid white;
+    border-bottom-color: white;
+    // background-size: 4px 50px;
   }
 `;
 
@@ -125,8 +127,9 @@ const NewsLocalLink = styled.div`
   &:last-child {
     border-width: 0;
   }
+  border-bottom: 4px solid transparent;
   :hover {
-    border-bottom: solid #bb1919;
+    border-bottom-color: #bb1919;
   }
 `;
 

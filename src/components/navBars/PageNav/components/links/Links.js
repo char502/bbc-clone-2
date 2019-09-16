@@ -25,8 +25,10 @@ const Link = styled.div`
   border-width 0 0.5px;
   display: flex;
   align-items: center;
+  border-bottom: 4px solid transparent;
   :hover {
-    border-bottom: solid red;
+    border-bottom-color: red;
+    // background-size: 4px 50px;
   }
 `;
 
@@ -57,8 +59,7 @@ const pageLinksforMap = [
   "Weather",
   "iPlayer",
   "Sounds",
-  "CBBC",
-  "More"
+  "CBBC"
 ];
 
 const Links = () => (
