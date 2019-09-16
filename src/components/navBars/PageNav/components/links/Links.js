@@ -25,7 +25,9 @@ const Link = styled.div`
   border-width 0 0.5px;
   display: flex;
   align-items: center;
-  
+  :hover {
+    border-bottom: solid red;
+  }
 `;
 
 const LinkMore = styled.div`

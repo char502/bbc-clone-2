@@ -53,6 +53,9 @@ const NewsLink = styled.div`
   &:last-child {
     border-width: 0;
   }
+  :hover {
+    border-bottom: solid white;
+  }
 `;
 
 const mainNewsLinksforMap = [
@@ -121,6 +124,9 @@ const NewsLocalLink = styled.div`
   }
   &:last-child {
     border-width: 0;
+  }
+  :hover {
+    border-bottom: solid #bb1919;
   }
 `;
 
