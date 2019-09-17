@@ -28,19 +28,20 @@ const Link = styled.div`
   border-bottom: 4px solid transparent;
   :hover {
     border-bottom-color: red;
-    // background-size: 4px 50px;
   }
 `;
 
 const LinkMore = styled.div`
   padding: 10px 15px 10px 15px;
-  // margin-right: 10px;
   color: #505050;
   border: solid lightgrey;
   font-size: 14px;
   font-weight: bold;
-  border-width 0 0.5px 0 0;
-  
+  border-width 0;
+  border-bottom: 4px solid transparent;
+  :hover {
+    border-bottom-color: red;
+  }
 `;
 
 const BellImageSizing = styled.img`

@@ -23,24 +23,25 @@ const UserIconSizing = styled.img`
   padding-right: 10px;
 `;
 
+const SignInButton = styled.button`
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+`;
+
 const SignIn = styled.span`
   font-size: 14px;
   text-decoration: none;
-  margin-bottom: 20px;
-  // display: flex;
-  // flex-wrap: inherit;
 `;
 
 const UserLogo = () => <UserIconSizing src={userIcon} />;
 
 const SignInComponent = () => (
   <SignInContainer>
-    <a href="#">
+    <SignInButton as="a" href="#">
       <UserLogo />
       <SignIn>Sign in</SignIn>
-    </a>
-    {/* <UserLogo />
-    <button>Sign in</button> */}
+    </SignInButton>
   </SignInContainer>
 );
 
