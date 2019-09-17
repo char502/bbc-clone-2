@@ -3,6 +3,9 @@ import styled from "styled-components";
 import faker from "faker";
 
 //Components
+import MakeHeadlines from "./components/MakeHeadLines";
+import NewsItemContainer from "./components/NewsItemContainer";
+import TopHeadLineLeftComponent from "./components/TopHeadLineLeft";
 import SideBar from "./components/SideBar";
 
 const MainBodyNewsOneContainer = styled.div`
@@ -11,7 +14,7 @@ const MainBodyNewsOneContainer = styled.div`
   height: auto;
   margin: 0 auto;
   display: flex;
-  padding: 20px;
+  //   padding: 20px;
 `;
 
 const MainHeadlinesStyle = styled.div`
@@ -23,7 +26,7 @@ const MainHeadlinesStyle = styled.div`
 `;
 
 const MainHeadlinesOneTopBanner = styled.div`
-  margin: 12px 12px 6px 12px;
+  //   margin: 12px 12px 6px 12px;
   background: green;
   border: 0.5px solid black;
   // height: 300px;
@@ -31,18 +34,35 @@ const MainHeadlinesOneTopBanner = styled.div`
   display: flex;
 `;
 
-const TopHeadlineLeft = styled.div`
-  padding: 10px;
-  flex: 3;
-`;
+// =========== Top Headline Right =====================
 
 const TopHeadLineRight = styled.div`
   padding: 10px;
   flex 1;
 `;
 
+const TopHeadLineRightNewsItemImage = styled.div`
+  //   width: 240;
+  width: 100%;
+  height: 135;
+  background: grey;
+  border: 0.5px solid black;
+`;
+
+const TopHeadLineRightComponent = () => {
+  return (
+    <TopHeadLineRight>
+      <TopHeadLineRightNewsItemImage />
+      <h3>{faker.lorem.words()}</h3>
+      <h5>metadata</h5>
+    </TopHeadLineRight>
+  );
+};
+
+// =========== End of Top Headline Right ===============
+
 const MainHeadlinesOneBottomBanner = styled.div`
-  margin: 6px 12px 12px 12px;
+  //   margin: 6px 12px 12px 12px;
   padding: 10px;
 
   background: yellow;
@@ -52,69 +72,14 @@ const MainHeadlinesOneBottomBanner = styled.div`
   display: flex;
 `;
 
-const NewsItemImg = styled.image`
-  width: 100%
-  height: 10px;
-  background: LightGray;
-
-`;
-
-const NewsItem = styled.div`
-  padding: 5px;
-  width: calc(25% - 10px);
-`;
-
-const NewsItemContainer = (props) => (
-  <NewsItem key={props.reference}>
-    <NewsItemImg />
-    <h3>{props.title}</h3>
-    <p>{props.body}</p>
-  </NewsItem>
-);
-
-const makeHeadlines = (amount) => {
-  let arr = [];
-  for (let i = 0; i < amount; i++) {
-    arr.push({
-      title: faker.lorem.words(),
-      body: faker.lorem.sentences()
-    });
-  }
-  return arr;
-};
-
 const MainHeadlines = () => (
   <MainHeadlinesStyle>
     <MainHeadlinesOneTopBanner>
-      <TopHeadlineLeft>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ut
-          sem viverra aliquet eget. Sed risus ultricies tristique nulla aliquet
-          enim. Eu scelerisque felis imperdiet proin. Dolor sit amet consectetur
-          adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Enim ut sem viverra aliquet eget. Sed risus ultricies
-          tristique nulla aliquet enim. Eu scelerisque felis imperdiet proin.
-          Dolor sit amet consectetur adipiscing elit. Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Enim ut sem viverra aliquet eget. Sed
-          risus ultricies tristique nulla aliquet enim. Eu scelerisque felis
-          imperdiet proin. Dolor sit amet consectetur adipiscing elit.
-        </p>
-      </TopHeadlineLeft>
-      <TopHeadLineRight>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Enim ut sem viverra
-        aliquet eget. Sed risus ultricies tristique nulla aliquet enim. Eu
-        scelerisque felis imperdiet proin. Dolor sit amet consectetur adipiscing
-        elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ut sem
-        viverra aliquet eget.
-      </TopHeadLineRight>
+      <TopHeadLineLeftComponent />
+      <TopHeadLineRightComponent />
     </MainHeadlinesOneTopBanner>
     <MainHeadlinesOneBottomBanner>
-      {makeHeadlines(4).map((newsItem) => (
+      {MakeHeadlines(4).map((newsItem) => (
         <NewsItemContainer
           reference={newsItem}
           title={newsItem.title}

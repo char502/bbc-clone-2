@@ -26,6 +26,7 @@ const Link = styled.div`
   display: flex;
   align-items: center;
   border-bottom: 4px solid transparent;
+  cursor: pointer;
   :hover {
     border-bottom-color: red;
   }
@@ -39,6 +40,7 @@ const LinkMore = styled.div`
   font-weight: bold;
   border-width 0;
   border-bottom: 4px solid transparent;
+  cursor: pointer;
   :hover {
     border-bottom-color: red;
   }

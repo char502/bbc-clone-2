@@ -40,6 +40,7 @@ const NewsLink = styled.div`
   border-right: 0.5px solid rgba(211, 211, 211, 0.7);
   display: flex;
   align-items: center;
+  cursor: pointer;
   &:first-child {
     padding-left: 0;
   }

@@ -32,6 +32,8 @@ const SignInButton = styled.button`
 const SignIn = styled.span`
   font-size: 14px;
   text-decoration: none;
+  color: black;
+  // font-weight: bold;
 `;
 
 const UserLogo = () => <UserIconSizing src={userIcon} />;

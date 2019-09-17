@@ -33,6 +33,7 @@ const NewsLocalLink = styled.div`
   border-right: 0.5px solid lightgrey;
   display: flex;
   align-items: center;
+  cursor: pointer;
   &:first-child {
     padding-left: 0;
   }
