@@ -13,7 +13,7 @@ const SideBarStyle = styled.div`
 
 const SideBarNewsItemStyle = styled.div`
   padding: 0 24px;
-  border: 0.5px solid black;
+  border-bottom: 0.5px solid grey;
   flex: 1;
 `;
 

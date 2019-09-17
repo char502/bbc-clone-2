@@ -22,6 +22,7 @@ const TopHeadlineLeftTitle = styled.h1`
 
 const TopHeadlineLeftTextContainer = styled.div`
   flex: 1;
+  padding: 5px;
 `;
 
 const TopHeadlineLeftImageContainer = styled.div`
@@ -34,7 +35,7 @@ const TopHeadlineLeftText = () => {
     <TopHeadlineLeftTitleContainer>
       <TopHeadlineLeftTitle>{faker.lorem.words()}</TopHeadlineLeftTitle>
       <TopHeadlineLeftTextContainer>
-        {faker.lorem.sentences()}
+        {faker.lorem.sentence()}
       </TopHeadlineLeftTextContainer>
     </TopHeadlineLeftTitleContainer>
   );

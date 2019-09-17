@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-const NewsItemImg = styled.image`
+const NewsItemImg = styled.img`
   width: 100%
-  height: 10px;
+  height: 30%;
   background: LightGray;
 
 `;
 
 const NewsItem = styled.div`
-  padding: 5px;
+  padding: 10px;
   width: calc(25% - 10px);
 `;
 
