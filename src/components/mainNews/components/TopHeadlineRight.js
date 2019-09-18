@@ -29,7 +29,7 @@ const TopHeadLineRightComponent = () => {
         <TopHeadLineRightNewsItemImageStyle src={fakeNewsImage} />
       </TopHeadLineRightNewsItemImageContainer>
       <h3>{faker.lorem.words()}</h3>
-      <p>{faker.lorem.sentences()}</p>
+      <p>{faker.lorem.sentence()}</p>
       <h5>metadata</h5>
     </TopHeadLineRight>
   );
