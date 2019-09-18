@@ -12,8 +12,6 @@ const NavNewsInner = styled.div`
   height: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  // padding: 0 16px;
-  // display: flex;
   justify-content: space-between;
   align-items: center;
 `;
@@ -27,7 +25,6 @@ const NewsHeader = styled.div`
 const NewsLinksContainer = styled.div`
   padding-left: 15px;
   height: 50px;
-  // background: blue;
   display: flex;
   flex: 3;
   align-items: center;

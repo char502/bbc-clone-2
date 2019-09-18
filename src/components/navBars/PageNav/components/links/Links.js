@@ -6,10 +6,7 @@ import bellImage from "../../../../../Images/bellImage.png";
 
 const PageLinksContainer = styled.div`
   height: 40px;
-  // background: blue;
   display: flex;
-  // margin: 0 auto;
-  // padding: 0 16px;
   flex: 3;
   align-items: center;
   margin-right: 65px;
@@ -50,7 +47,6 @@ const BellImageSizing = styled.img`
   width: 30px;
   height: 25px;
   margin: -3px;
-  // margin-top: 5px;
 `;
 
 const BellImageComponent = () => <BellImageSizing src={bellImage} />;

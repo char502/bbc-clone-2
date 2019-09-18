@@ -46,7 +46,7 @@ const TopHeadLineLeftNewsItemImageStyle = styled.img`
     width: 100%;
     height: 100%;
     flex: 2
-    padding: 0 5px 0 20px;
+    padding: 0 20px 0 20px;
 `;
 
 const Metadata = styled.div`

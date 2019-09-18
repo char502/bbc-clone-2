@@ -17,7 +17,6 @@ const MainBodyNewsOneContainer = styled.div`
 `;
 
 const MainHeadlinesStyle = styled.div`
-  // padding-left: 15px:
   flex: 4;
   display: flex;
   flex-direction: column;

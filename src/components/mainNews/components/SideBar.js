@@ -3,12 +3,9 @@ import styled from "styled-components";
 import faker from "faker";
 
 const SideBarStyle = styled.div`
-  // margin: 24px;
   display: flex;
   flex: 1;
-  // background: red;
   flex-direction: column;
-  // border: 0.5px solid black;
 `;
 
 const SideBarNewsItemStyle = styled.div`

@@ -7,7 +7,6 @@ import userIcon from "../../../../../Images/userIcon.png";
 const SignInContainer = styled.div`
   flex: 1;
   height: 40px;
-  // background: yellow;
   padding: 0 10px;
   display: flex;
   align-items: center;
@@ -16,6 +15,7 @@ const SignInContainer = styled.div`
   border-top: 0;
   border-bottom: 0;
   position: relative;
+  //Triangle in border
   ::after {
     content: "";
     display: block;
@@ -48,7 +48,6 @@ const SignIn = styled.span`
   font-size: 14px;
   text-decoration: none;
   color: black;
-  // font-weight: bold;
 `;
 
 const UserLogo = () => <UserIconSizing src={userIcon} />;

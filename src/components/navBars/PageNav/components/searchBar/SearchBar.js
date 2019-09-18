@@ -7,7 +7,6 @@ import magnifyingGlass from "../../../../../Images/greySearchButton3.jpg";
 const SearchBarContainer = styled.div`
   flex: 1;
   height: 40px;
-  // background: yellow;
   padding: 0 10px;
   display: flex;
   align-items: center;

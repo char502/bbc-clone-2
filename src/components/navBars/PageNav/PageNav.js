@@ -7,17 +7,14 @@ import SignInComponent from "./components/signIn/SignIn";
 import Links from "./components/links/Links";
 import SearchBar from "./components/searchBar/SearchBar";
 
-// =============== First Nav ===============
 const NavContainer = styled.div`
   width: 100vw;
   height: 40px;
-  // background: green;
 `;
 
 const NavInner = styled.div`
   width: 100%;
   height: 100%;
-  // background: red;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
