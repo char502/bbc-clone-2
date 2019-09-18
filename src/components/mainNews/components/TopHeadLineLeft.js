@@ -35,7 +35,7 @@ const TopHeadlineLeftText = () => {
     <TopHeadlineLeftTitleContainer>
       <TopHeadlineLeftTitle>{faker.lorem.words()}</TopHeadlineLeftTitle>
       <TopHeadlineLeftTextContainer>
-        {faker.lorem.sentence()}
+        {faker.lorem.sentences()}
       </TopHeadlineLeftTextContainer>
     </TopHeadlineLeftTitleContainer>
   );
@@ -46,6 +46,11 @@ const TopHeadLineLeftNewsItemImageStyle = styled.img`
     width: 100%;
     height: 100%;
     flex: 2
+    padding: 0 5px 0 20px;
+`;
+
+const Metadata = styled.div`
+  padding-left: 15px;
 `;
 
 const TopHeadLineLeftComponent = () => {
@@ -53,7 +58,9 @@ const TopHeadLineLeftComponent = () => {
     <TopHeadlineLeft>
       <TopHeadlineLeftTextContainer>
         <TopHeadlineLeftText />
-        {/* <h5>metadata</h5> */}
+        <Metadata>
+          <h5>metadata</h5>
+        </Metadata>
       </TopHeadlineLeftTextContainer>
 
       <TopHeadlineLeftImageContainer>

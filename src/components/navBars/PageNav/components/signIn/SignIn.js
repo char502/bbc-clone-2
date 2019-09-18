@@ -12,10 +12,25 @@ const SignInContainer = styled.div`
   display: flex;
   align-items: center;
   margin-right: 5px;
-  // flex-wrap: nowrap;
   border: 0.5px solid lightgrey;
   border-top: 0;
   border-bottom: 0;
+  position: relative;
+  ::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: -5px;
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+    border-right: 1px solid #cad5e0;
+    border-bottom: 1px solid #cad5e0;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    background-color: none;
+  }
 `;
 
 const UserIconSizing = styled.img`

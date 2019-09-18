@@ -14,7 +14,6 @@ const MainBodyNewsOneContainer = styled.div`
   height: auto;
   margin: 0 auto;
   display: flex;
-  //   padding: 20px;
 `;
 
 const MainHeadlinesStyle = styled.div`
@@ -22,24 +21,15 @@ const MainHeadlinesStyle = styled.div`
   flex: 4;
   display: flex;
   flex-direction: column;
-  //   border: 0.5px solid black;
 `;
 
 const MainHeadlinesOneTopBanner = styled.div`
-  //   margin: 12px 12px 6px 12px;
-  //   background: green;
-  //   border: 0.5px solid black;
-  // height: 300px;
   flex: 1;
   display: flex;
 `;
 
 const MainHeadlinesOneBottomBanner = styled.div`
-  //   margin: 6px 12px 12px 12px;
   padding: 10px;
-  //   background: yellow;
-  //   border: 0.5px solid black;
-  // height: 300px;
   flex: 1;
   display: flex;
 `;

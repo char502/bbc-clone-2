@@ -17,34 +17,12 @@ const SideBarNewsItemStyle = styled.div`
   flex: 1;
 `;
 
-// const titleStyle = styled.h1``
-
-// border - right: solid lightgrey;
-// border - width 0 0.5px;
-// display: flex;
-// align - items: center;
-
-const sideBarMeta = () => {};
-
-// linkItemSideBarStyle = styled.div`
-//   display: flex;
-//   justify-content: flex-start;
-//   align-items: center;
-// `;
-
-const linkItemSideBar = () => "Test";
-// {
-// /* <linkItemSideBarStyle>
-// <SideBarMeta />
-// </linkItemSideBarStyle> */
-// }
-
 const MakeSideBarNewsItem = (amount) => {
   let arr = [];
   for (let i = 0; i < amount; i++) {
     arr.push({
       title: faker.lorem.words(),
-      linkItem: linkItemSideBar()
+      linkItem: "metadata"
     });
   }
   return arr;

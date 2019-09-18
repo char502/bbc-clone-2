@@ -7,7 +7,7 @@ import fakeNewsImage from "../../../Images/fakeNewsImage.jpg";
 // Image copied from: http://frankhorvat.com/wp-content/uploads/2018/10/fake-news_frank-horvat.jpg
 
 const TopHeadLineRight = styled.div`
-  padding: 10px;
+  padding: 10px 25px 10px 25px;
   flex 1;
 `;
 
@@ -25,11 +25,9 @@ const TopHeadLineRightNewsItemImageStyle = styled.img`
 const TopHeadLineRightComponent = () => {
   return (
     <TopHeadLineRight>
-      {/* <TopHeadLineRightNewsItemImage /> */}
       <TopHeadLineRightNewsItemImageContainer>
         <TopHeadLineRightNewsItemImageStyle src={fakeNewsImage} />
       </TopHeadLineRightNewsItemImageContainer>
-
       <h3>{faker.lorem.words()}</h3>
       <h5>metadata</h5>
     </TopHeadLineRight>
