@@ -48,6 +48,10 @@ const NewsLink = styled.div`
   &:last-child {
     border-width: 0;
   }
+  &:last-child {
+    border-width: 0;
+    border-bottom: 4px solid transparent;
+  }
 `;
 
 const mainNewsLinksforMap = [
